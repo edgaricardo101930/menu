@@ -31,7 +31,7 @@
 		position: relative;
 	}
 
-	.loader1, .loader2{
+	.loader1, .loader2, .loader3{
 		position: absolute;
 		border: 5px solid transparent;
 		border-radius: 50%;
@@ -54,6 +54,14 @@
 		animation: circuloI 2s linear 3;
 	}
 
+	.loader3{
+		width: 65px;
+		height: 65px;
+		border-left: 7px solid darkturquoise;
+		border-right: 7px solid darkturquoise;
+		top: 7px; left: 7px; 
+		animation: circulo3 2s linear 3;
+	}
 
 	@keyframes circulo{
 		from{transform: rotate(0deg);}
@@ -63,6 +71,11 @@
 	@keyframes circuloI{
 		from{transform: rotate(0deg);}
 		to{transform: rotate(-360deg);}
+	}
+
+	@keyframes circulo3{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(360deg);}
 	}
 
 	@keyframes fadeout{
